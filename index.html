@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>blog</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,900|Space+Mono:400,700" rel="stylesheet">
+</head>
+<body>
+	<section class="landing">
+		<h1 class="landing__title">
+			New blog for Vladimir Metnew
+		</h1>
+		<p class="landing__descr">
+			posted April 6, 2017 on 
+			<a href="">
+				elixir
+			</a>
+			<a href="">
+				phoenix
+			</a>
+			<a href="">
+				react
+			</a>
+			<a href="">
+				redux
+			</a>
+		</p>
+	</section>
+	<section class="content">
+		<h2 class="content__title">
+			This is my first article here
+		</h2>
+		<p class="content__descr content__article">
+			Some words about this article.
+		</p>
+		<h3 class="content__subtitle">
+			Part 1 of the article
+		</h3>
+		<p class="content__article">
+			<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia suscipit, enim minus pariatur vitae eum reiciendis? Laborum quasi repudiandae ad aliquam, qui veniam ex ut at eveniet iste, facere sequi.</span>
+			<span>Magni veniam cumque neque ipsum id in nihil, sapiente et harum consequuntur expedita ea unde nulla, nostrum pariatur nesciunt dolore soluta ipsa natus ratione asperiores, alias qui quidem eos! Veritatis?</span>
+			<span>Praesentium, aliquam sed consequatur id sit, suscipit adipisci. Eligendi officia beatae recusandae ipsa dolores libero aspernatur ab quasi facere repellendus, harum ex ducimus, non velit debitis. Doloremque aliquid doloribus nesciunt.</span>
+			<span>Sapiente voluptas minus adipisci dolores veniam esse, saepe officia officiis, neque, exercitationem illum quia deserunt magnam ipsum quas delectus voluptatem debitis cumque animi molestias eaque odit ratione quo modi! Laborum!</span>
+		</p>
+		<h3 class="content__subtitle">
+			Part 2. This block has the same styles as "Part 1 of the article"
+		</h3>
+		<div class="content__codearea"> 
+			// web/static/js/routes/index.js
+
+			import { IndexRoute, Route }    <br>    from 'react-router';<br>
+			import React                    <br>	from 'react';<br>
+			import MainLayout               <br>    from '../layouts/main';<br><br>
+			import AuthenticatedContainer   <br>    from '../containers/authenticated';<br>
+			import HomeIndexView             <br>   from '../views/home';<br>
+			import RegistrationsNew          <br>   from '../views/registrations/new';<br>
+			import SessionsNew         <br>         from '../views/sessions/new';<br>
+			import BoardsShowView      <br>         from '../views/boards/show';<br>
+			import CardsShowView       <br>        from '../views/cards/show';<br>
+			<br>
+						export default (<br>
+			  <⁠Route component={MainLayout}><br>
+			    <⁠Route path="/sign_up" component={RegistrationsNew} /><br>
+			    <⁠Route path="/sign_in" component={SessionsNew} /><br>
+				<br>
+			    <⁠Route path="/" component={AuthenticatedContainer}><br>
+			      <⁠IndexRoute component={HomeIndexView} /><br>
+				<br>
+			      <⁠Route path="/boards/:id" component={BoardsShowView}><br>
+			        <⁠Route path="cards/:id" component={CardsShowView}/><br>
+			      <⁠/Route><br>
+			    <⁠/Route><br>
+			  <⁠/Route><br>
+			);
+		</div>
+		<p class="content__article">
+			This block has the same styles as block "lorem" with 4 paragraphs. 
+			<br>
+			<br>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, eveniet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni dolor voluptatum fugiat cum esse fuga reiciendis vero expedita ad maxime.
+		</p>
+	</section>
+	<section class="recomendation">
+		<h2 class="recomendation__title">
+			Also I recomend you to 
+			<span class="code-word">read</span> 
+		</h2>
+		<ul class="recomendation__list">
+			<li>
+				<a href="">
+					Top 100 books I read
+				</a>
+			</li>
+			<li>
+				<a href="">
+					My first project on Angular2
+				</a>
+			</li>
+			<li>
+				<a href="">
+					Some exploits that I have found
+				</a>
+			</li>
+			<li>
+				<a href="">
+					My favorite subjects in the university
+				</a>
+			</li>
+			<li>
+				<a href="">
+					Data analysis
+				</a>
+			</li>
+		</ul>
+	</section>
+</body>
+</html>

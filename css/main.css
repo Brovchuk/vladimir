@@ -1,0 +1,89 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+.landing {
+	background: url("../img/backgroundimg.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100%;
+	color: #262626;
+	text-align: center;
+}
+.landing__title {
+	font-size: 70px;
+	font-weight: 400;
+	width: 80%;
+	margin: 0 auto 120px;
+	padding-top: 15%;
+}
+.landing__descr {
+	font-size: 20px;
+	border-top: 1px solid #262626;
+	padding-top: 20px;
+	width: 60%;
+	margin: 0 auto;
+}
+.landing__descr a {
+	text-decoration: none;
+	color: #262626;
+	background-color: rgba(189,195,199,0.5);
+	margin-left: 10px;
+	padding: 2px 5px;
+	transition: .5s ease;
+}
+.landing__descr a:hover {
+	background-color: #217dbb;
+	color: #fff
+}
+.content {
+	width: 70%;
+	margin: 0 auto;
+	color: #606a71;
+}
+.content__title {
+	font-size: 54px;
+	margin-top: 150px;
+	margin-bottom: 50px;
+}
+.content__article {
+	line-height: 1.5;
+	font-size: 18px;
+}
+.content__subtitle {
+	margin: 40px 0;
+	font-size: 38px;
+}
+.content__codearea {
+	overflow: scroll;
+	background-color: #f8f8f8;
+	height: 600px;
+	padding: 30px 0 30px 20px;
+	margin-bottom: 30px;
+}
+.recomendation {
+	width: 70%;
+	margin: 0 auto;
+	color: #606a71;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+.recomendation__title {
+	font-size: 30px;
+	margin-bottom: 50px;
+=}
+.recomendation__list {
+	list-style: none;
+	font-size: 22px;
+}
+.recomendation__list li {
+	margin-bottom: 10px;
+}
+.recomendation__list li a {
+	color: #606a71;
+}
+.code-word { /* данный класс создан для выделения слов или 
+				элементов кода вне блока codearea */ 
+	background-color: #f8f8f8;
+}
